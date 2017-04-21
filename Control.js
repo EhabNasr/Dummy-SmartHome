@@ -12,7 +12,8 @@ function Handle(url, cFunction){
     xhttp.open("GET", url, true);
     xhttp.send();
 }
-function lightsToggle(xhttp) {
+function lightsToggle() {
+    var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "CommandHandler.php?T", true); //T for Toggle lights
     document.getElementById("lightsOn").src="css/file-light-bulb-grey-icon-svg-2.png";
 }
