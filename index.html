@@ -18,12 +18,11 @@
 </head>
 <body>
 <div class="container-fluid">
-    <form method="get" action="gpio.php">
         <br>
         <div class="form-group">
             <div class="row">
                 <div class="col-xs-12">
-                    <button type="button" class="btn btn-default btn-block" onclick="lightsToggle()">
+                    <button type="button" class="btn btn-default btn-block" onclick="Handle('CommandHandler.php', LightsToggle)">
                         <div class="row">
                             <div class="col-xs-12">
                                 <img src="css/file-light-bulb-yellow-icon-svg-2.png" width="128" height="128">
@@ -51,7 +50,7 @@
                 </div>
             <br>
         </div>
-    </form>
+
 </div>
 </body>
 </html>
