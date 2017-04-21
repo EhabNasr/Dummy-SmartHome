@@ -13,8 +13,7 @@ function Handle(url, cFunction){
 function lightsToggle() {
     xhttp.open("GET", "CommandHandler.php?T", true); //T for Toggle lights
     xhttp.send();
-    //    document.getElementById("lights").value="Close Curtain";
-
+    document.getElementById("lightsOn").src="css/file-light-bulb-grey-icon-svg-2.png";
 }
 
 function checkLights(xhttp) {
