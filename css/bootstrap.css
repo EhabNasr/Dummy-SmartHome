@@ -6755,3 +6755,11 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+.icon-bulb {
+  background-image: url("file-light-bulb-yellow-icon-svg-2.png");
+  background-position: center center;
+}
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
