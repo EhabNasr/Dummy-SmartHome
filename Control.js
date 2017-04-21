@@ -1,12 +1,20 @@
 /**
  * Created by ehab on 4/21/2017.
  */
-
+$(document).ready(function(){
+    $('.btn').click(function(){
+        $("#lights").toggleClass('on off');
+        if($('#lights').hasClass('on')){
+            $('#lights').attr('src', 'css/file-light-bulb-yellow-icon-svg-2.png');
+        }else{
+            $('#lights').attr('src', 'css/file-light-bulb-grey-icon-svg-2.png');
+        }
+    });
+});
 function lightsToggle() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "CommandHandler.php?T", true); //T for Toggle lights
     xhttp.send();
-//    document.getElementById("lightsOn").src="css/file-light-bulb-grey-icon-svg-2.png";
 }
 
 function checkLights() {
@@ -16,6 +24,8 @@ function checkLights() {
 }
 
 function lockDoor() {
-    xhttp.open("GET", "CommandHandler.php?LD", true); //LD for LockDoor
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "CommandHandler.php?T", true); //T for Toggle lights
     xhttp.send();
+//    document.getElementById("lightsOn").src="css/file-light-bulb-grey-icon-svg-2.png";
 }
