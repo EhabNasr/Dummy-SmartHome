@@ -9,12 +9,11 @@ function Handle(url, cFunction){
             cFunction(this);
         }
     };
-//    xhttp.open("GET", url, true);
-//    xhttp.send();
+    xhttp.open("GET", url, true);
+    xhttp.send();
 }
 function lightsToggle(xhttp) {
     xhttp.open("GET", "CommandHandler.php?T", true); //T for Toggle lights
-    xhttp.send();
     document.getElementById("lightsOn").src="css/file-light-bulb-grey-icon-svg-2.png";
 }
 
