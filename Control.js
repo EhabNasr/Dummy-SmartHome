@@ -1,22 +1,21 @@
 /**
  * Created by ehab on 4/21/2017.
  */
-var lights = 1;
 
 function lightsToggle() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "CommandHandler.php?T", true); //T for Toggle lights
     xhttp.send();
-    document.getElementById("lightsOn").src="css/file-light-bulb-grey-icon-svg-2.png";
+//    document.getElementById("lightsOn").src="css/file-light-bulb-grey-icon-svg-2.png";
 }
 
-function checkLights(xhttp) {
+function checkLights() {
     xhttp.open("GET", "CommandHandler.php?C", true); //C for CheckLights
     xhttp.send();
 
 }
 
-function lockDoor(xhttp) {
+function lockDoor() {
     xhttp.open("GET", "CommandHandler.php?LD", true); //LD for LockDoor
     xhttp.send();
 }
