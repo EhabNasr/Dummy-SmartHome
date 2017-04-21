@@ -2,7 +2,7 @@
  * Created by ehab on 4/21/2017.
  */
 $(document).ready(function(){
-    $('.btn').click(function(){
+    $("#on-off").click(function(){
         $("#lights").toggleClass('on off');
         if($('#lights').hasClass('on')){
             $('#lights').attr('src', 'css/file-light-bulb-yellow-icon-svg-2.png');
