@@ -7,11 +7,8 @@
  */
 exec("gpio mode 14 out");
 $gpio_status = exec("gpio read 14");
-if(isset($_GET['on'])){
-    exec("gpio write 14 0"); //Negative Logic
-}
-if(isset($_GET['off'])){
-    exec("gpio write 14 1"); //Negative Logic
+if(isset($_GET['T'])){
+    exec("gpio toggle 14"); //Negative Logic
 }
 if(isset($_GET['openlock'])){
     echo exec("sudo ./C_Lock/openDoor");

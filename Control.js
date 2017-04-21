@@ -6,8 +6,8 @@ function LightsOn() {
     xhttp.open("GET", "CommandHandler.php?on", true);
     xhttp.send();
 }
-function LightsOff() {
+function LightsToggle() {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "CommandHandler.php?off", true);
+    xhttp.open("GET", "CommandHandler.php?T", true);
     xhttp.send();
 }
