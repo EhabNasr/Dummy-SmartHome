@@ -27,5 +27,4 @@ function lockDoor() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "CommandHandler.php?T", true); //T for Toggle lights
     xhttp.send();
-//    document.getElementById("lightsOn").src="css/file-light-bulb-grey-icon-svg-2.png";
 }
